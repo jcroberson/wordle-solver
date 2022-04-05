@@ -1,5 +1,4 @@
 #########################           IMPORTS            #########################
-from os import chdir
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from random import randint
