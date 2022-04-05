@@ -12,7 +12,7 @@ def retrieve_bank():
     Outputs:
         word_bank - list: a list of all possible answer words
     """
-    with open('wordle/Bank_2.csv') as file:
+    with open('PATH TO BANK 2') as file:
         reader = csv.reader(file)
         word_bank = list(reader)[0]
     return word_bank
@@ -92,8 +92,9 @@ def clear_dross(guess: str, score: np.array, bank: list):
                     bank_buffer.append(word)
     return bank_buffer
 #####################           OPENING WEBPAGE           ######################
+# configured for Firefox
 driver = webdriver.Firefox(
-    executable_path = r'C:\Users\jacks\Documents\Coding\python\geckodriver.exe')
+    executable_path = r'PATH TO DRIVER')
 driver.get("https://octokatherine.github.io/word-master/")
 ##################           ESTABLISHING VARIABLES           ##################
 solved = False
